@@ -60,7 +60,7 @@ h2 {
 @for $i from 1 through 4 {
     .col#{$i} {
         @include grid($i);
-        div, img {
+        > div, > img {
             @include floating(10px, 0px 0px 60px 5px rgba(0,0,0,0.5), none);
             max-width: 100%
         }
