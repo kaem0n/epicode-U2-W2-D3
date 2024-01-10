@@ -1,4 +1,4 @@
-@mixin fade-in($duration: 1s, $start: -50px, $end: 0px, $delay: 0ms) {
+@mixin fade-in($duration: 1s, $start: -50px, $end: 0px, $delay: 0.5s) {
     @keyframes fadeIn {
         0% {
             opacity: 0;
