@@ -1,0 +1,70 @@
+@import './partials/reset';
+@import './partials/colors';
+@import './partials/fonts';
+@import './partials/spacings';
+@import './partials/buttons';
+@import './partials/mixins';
+@import './partials/animations';
+
+.fadein {
+    @include fade-in
+}
+
+nav {
+    background-color: darkslategray;
+    padding: 1.5rem;
+    @include flex(start, center);
+    ul {
+        display: flex;
+        li a {
+            text-decoration: none;
+            color: $text-color;            
+        }
+    }
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-hero;
+}
+
+.title {
+    @include title-big
+}
+
+h2 {
+    font-size: $text-large
+}
+
+.flex-row {
+    @include flex
+}
+
+.flex-column {
+    @include flex;
+    flex-direction: column;
+}
+
+.circle {
+    @include floating(50%, none, none)
+}
+
+@for $i from 1 through 4 {
+    .col#{$i} {
+        @include grid($i);
+        div, img {
+            @include floating(10px, 0px 0px 61px 5px rgba(0,0,0,0.5), none);
+            max-width: 100%
+        }
+    }
+}
+
+.row {
+    @include flex;
+    flex-wrap: wrap;
+    background-color: white;
+    @include floating(20px, 0px 3px 7px 0px rgba(0,0,0,0.75), gray)
+}
