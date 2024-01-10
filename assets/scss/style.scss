@@ -68,7 +68,7 @@ h2 {
 }
 
 .row {
-    @include flex;
+    @include flex(start, start);
     flex-wrap: wrap;
     background-color: white;
     @include floating(20px, 0px 3px 7px 0px rgba(0,0,0,0.75), gray)
