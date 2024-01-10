@@ -1616,6 +1616,8 @@ body {
 nav {
   background-color: darkslategray;
   padding: 1.5rem;
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1634,6 +1636,8 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   background-color: #640fc5;
+  position: relative;
+  z-index: 1;
 }
 
 .title {
@@ -1667,7 +1671,7 @@ h2 {
 
 .col1 {
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1676,13 +1680,13 @@ h2 {
 .col1 div, .col1 img {
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 61px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.5);
   max-width: 100%;
 }
 
 .col2 {
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1691,13 +1695,13 @@ h2 {
 .col2 div, .col2 img {
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 61px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.5);
   max-width: 100%;
 }
 
 .col3 {
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1706,13 +1710,13 @@ h2 {
 .col3 div, .col3 img {
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 61px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.5);
   max-width: 100%;
 }
 
 .col4 {
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1721,7 +1725,7 @@ h2 {
 .col4 div, .col4 img {
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 61px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.5);
   max-width: 100%;
 }
 

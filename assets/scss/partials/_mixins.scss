@@ -6,7 +6,7 @@
 
 @mixin grid($col-num) {
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 1.5rem;
     @include flex;
     @if $col-num == 1 {
         width: 100%;

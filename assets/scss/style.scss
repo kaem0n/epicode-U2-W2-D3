@@ -13,6 +13,8 @@
 nav {
     background-color: darkslategray;
     padding: 1.5rem;
+    position: relative;
+    z-index: 2;
     @include flex(start, center);
     ul {
         display: flex;
@@ -29,6 +31,8 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: $bg-hero;
+    position: relative;
+    z-index: 1;
 }
 
 .title {
@@ -56,7 +60,7 @@ h2 {
     .col#{$i} {
         @include grid($i);
         div, img {
-            @include floating(10px, 0px 0px 61px 5px rgba(0,0,0,0.5), none);
+            @include floating(10px, 0px 0px 60px 5px rgba(0,0,0,0.5), none);
             max-width: 100%
         }
     }
